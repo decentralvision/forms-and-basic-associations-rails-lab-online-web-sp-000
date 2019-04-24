@@ -18,4 +18,8 @@ class Song < ActiveRecord::Base
   def genre_name
     self.try(:genre).try(:name)
   end
+
+  def genre_name=(genre)
+
+  end
 end
