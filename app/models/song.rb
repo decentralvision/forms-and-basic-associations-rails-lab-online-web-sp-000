@@ -6,4 +6,6 @@ class Song < ActiveRecord::Base
   # def song_artist_name
   #   Artist.find(self.artist_id).name
   # end
+  def artist_name
+    self.try(:artist).try(:name)
 end
