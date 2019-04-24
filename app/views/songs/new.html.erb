@@ -11,6 +11,7 @@
     <% Genre.all.each do |genre| %>
       <option value="<%=genre.name%>">
     <%end%>
+  </datalist>
   <%= f.label :genre %>
   <%= f.datalist :genre %>
   <br />
